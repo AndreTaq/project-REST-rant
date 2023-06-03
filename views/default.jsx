@@ -7,10 +7,10 @@ function Def (html) {
                 <title>Title</title>
             </head>
             <body>
-                
+                {html.children}
             </body>
         </html>
     )
 }
 
-module.express = Def
+module.exports = Def
