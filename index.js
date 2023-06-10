@@ -6,13 +6,14 @@ const methodOverride = require('method-override')
 
 
 // Middleware
-app.use(express.urlencoded({extended: true}))
+
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
-app.use(methodOverride('_method'))
 app.engine('jsx', require('express-react-views').createEngine())
-app.use('/places', require('./controllers/places'))
+app.use(methodOverride('_method'))
 app.use(express.static('public'))
+app.use(express.urlencoded({extended: true}))
+
 
 
 // ROUTES 
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+app.use('/places', require('./controllers/places'))
 
 // 404 Page
 app.get('*', (req, res) => {
