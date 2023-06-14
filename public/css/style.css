@@ -12,7 +12,11 @@ main {
 h1 {
     text-align: center;
     color: cornflowerblue;
-  }
+}
+
+h2 {
+  color: rgb(94, 224, 247);
+}
 
 .homeimg {
     width: 50%;
