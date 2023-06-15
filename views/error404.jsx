@@ -6,7 +6,7 @@ function error404 () {
         <Def>
             <main>
                 <h1>404: PAGE NOT FOUND</h1>
-                <img class = 'homeimg' src="\images\not-found.jpg.jpg" alt="NOT FOUND" />
+                <img className = 'homeimg' src="\images\not-found.jpg.jpg" alt="NOT FOUND" />
                 <p>Oops, sorry, we can't find this page!</p>
             </main>
         </Def>

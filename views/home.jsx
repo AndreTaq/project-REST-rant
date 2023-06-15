@@ -7,7 +7,7 @@ function home () {
             <main>
                 <h1>HOME</h1>
                 <div>
-                    <img class = 'homeimg' src="\images\chia-fruit-drink.jpg.jpg" alt="Chia Fruit Shake" /> 
+                    <img className = 'homeimg' src="\images\chia-fruit-drink.jpg.jpg" alt="Chia Fruit Shake" /> 
                     <div>
                         Photo by <a href="https://unsplash.com/@cravethebenefits">Brenda Godinez</a> on <a href="https://unsplash.com/photos/MsTOg6rhRVk">Unsplash</a>
                     </div>
