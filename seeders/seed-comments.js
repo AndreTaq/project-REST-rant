@@ -6,7 +6,7 @@ const db = require('../models')
 async function seed() {
     //get the place, H-Thai-ML
     
-    let place = await db.Place.findOne({_id: '6487c41c417418747a27d57b'})
+    let place = await db.Place.findOne({_id:'649380034923ce12106c6884'})
     //create a fake sample comment
     let comment = await db.Comment.create({
         author: 'Famished Fran',
