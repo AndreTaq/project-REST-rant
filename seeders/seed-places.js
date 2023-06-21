@@ -27,5 +27,4 @@ db.Place.create([
     process.exit()
 })
 
-
 // after running node seeders/seed-places.js it shows an error (MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.)
