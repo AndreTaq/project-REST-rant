@@ -3,17 +3,16 @@ const Def = require("../default");
 const comments = require('../../models/comment.js')
 
 function show(data) {
-  let comments = (
+  let comments =
     <h3 className="inactive">
       No comments yet!
     </h3>
-  )
-  let rating = (
+  let rating = 
     <h3 className="inactive">
       No yet rated
     </h3>
-  )
   if (data.place.comments.length) {
+    comments = data.place.comments.map(c => {
     let sumRatings = data.place.comments.reduce((tot, c) => {
       return tot + c.stars
     }, 0)
@@ -27,9 +26,9 @@ function show(data) {
         {stars} stars
       </h3>
     )
-    comments = data.place.comments.map(c => {
+    
       return (
-        <div className="border">
+        <div className="col-sm-4 rant-box">
           <h2 className="rant">{c.rant ? 'Rant! 😠' : 'Rave! ❤️'}</h2>
           <h4>{c.content}</h4>
           <h3>
@@ -46,7 +45,7 @@ function show(data) {
       <div className="row">
       <div className="col-sm-6">
         
-        <img src={data.place.pic} alt={data.place.name} />
+        <img className="img-fluid" src={data.place.pic} alt={data.place.name} />
         <h3 className='text-center'>
           Located in {data.place.city}, {data.place.state}
         </h3>
